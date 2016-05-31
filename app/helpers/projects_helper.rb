@@ -65,9 +65,6 @@ module ProjectsHelper
   def render_project_hierarchy(projects)
     render_project_nested_lists(projects) do |project|
       s = link_to_project(project, {}, :class => "#{project.css_classes} #{User.current.member_of?(project) ? 'my-project' : nil}")
-      if project.description.present?
-        s << content_tag('div', textilizable(project.short_description, :project => project), :class => 'wiki description')
-      end
       s
     end
   end
