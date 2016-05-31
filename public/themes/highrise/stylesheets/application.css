@@ -99,7 +99,7 @@ p.subtitle {
 	margin: 0px 0 12px 0;
 }
 
-.contextual a, .contextual a:link, .contextual a:visited {color: #FFF;}
+.contextual a, .contextual a:link, .contextual a:visited, .contextual  {color: #FFF;}
 
 .contextual a:hover, .contextual a:visited:hover {color: #EEE;}
 
